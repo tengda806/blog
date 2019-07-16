@@ -1,5 +1,5 @@
 import React,{ Component } from "react" 
-// import { articleList , deleteArticle} from '../api/article'
+import { getPost } from '../api/post'
 import "./home.less"
 import {WOW} from "wowjs"
 import "animate.css"
@@ -7,10 +7,19 @@ import "animate.css"
 class Home extends Component{
 
     state = {
-        list:[]
+        list:[],
+        pageSize:5,
+        page:1
     }
     componentDidMount(){
-        new WOW().init()
+        this.getData().then(() => new WOW().init())
+    }
+
+    getData(){
+        let { page , pageSize } = this.state ; 
+        return getPost({page,pageSize}).then(res=>{
+            console.log(res)
+        })
     }
 
    

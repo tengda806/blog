@@ -1,5 +1,4 @@
 import React , { Component } from "react"
-import { detail } from "../api/article"
 
 class Detail extends Component{
 
@@ -8,15 +7,11 @@ class Detail extends Component{
     }
 
     componentDidMount(){
-        this.getDetail()
+        // this.getDetail()
     }
     getDetail(){
-        let _id = this.props.match.params.id ; 
-        detail({_id}).then(data=>{
-            this.setState({
-                detail : data.data 
-            })
-        })
+        // let _id = this.props.match.params.id ; 
+
     }
 
     render(){
