@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { stringify } from 'qs'
 const request = axios.create({
-  baseURL: 'http://localhost:8808/',
+  baseURL: 'http://localhost:8808/get/',
   headers: {
     post: {
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
