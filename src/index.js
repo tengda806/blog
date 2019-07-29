@@ -6,6 +6,7 @@ import store from  "./store"
 import "./static/css"
 import router from "./router"
 let _jiatengda = "jiatengda"
+
 ReactDOM.render(
   <Provider {...store}>
      <App />
