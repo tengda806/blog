@@ -59,7 +59,7 @@ class Home extends Component{
                                 >
                               <a className={'cover j-cp'}>
                                 <img src={`https://annie-header-bg-1253939655.cos.ap-beijing.myqcloud.com/${Math.floor(Math.random() * 100)}.jpg`} alt=""/>
-                              </a>
+                              </a> 
                                 <div className={'text'}>
                                     <p className={'ctime'}>四月 30日, 2019</p>
                                     <h3 className={'title j-oh j-cp'}>{item.title}</h3>
